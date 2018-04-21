@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="divel">
+      <form [formGroup]="form">
+    <h1 style="text-align:center">Base Converter</h1>
+    
+  <h1>Decimal :</h1> <input class="text" formControlName="decimal"
+  name="decimal" (ngModelChange)="decimalChanged(oldvalue,newValue=$event)"
+   type="text" placeholder="Decimal">
+  <br>
+  <br>
+ <h1> Binary   :</h1><input class="text" name="binary" (ngModelChange)="binaryChanged(oldvalue,newValue=$event)"
+   formControlName="binary" type="text" placeholder="Binary">
+  <br>
+  <br>
+ <h1>Octal :  </h1> <input class="text" name="octal" (ngModelChange)="octalChanged(oldvalue,newValue=$event)"
+   formControlName="octal" type="text" placeholder="Octal">
+  <br>
+  <br>
+ <h1> Hexa :  </h1> <input class="text" name="hexa " (ngModelChange)="hexaChanged(oldvalue,newValue=$event)"
+  formControlName="hexa" type="text" placeholder="Hexa">
+  <br>
+  <br>
+</form>
+</div>
+</body>
+</html>
